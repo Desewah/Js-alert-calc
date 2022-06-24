@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Calculator</title>
+</head>
+
+<body>
+    <script>
+        let myIntro = "Hello, User"
+        alert(myIntro)
+        var userWish = window.prompt("I can perform the following arithmetic operations: (+)(-)(*)(/) (%) (^).\nWhich of the arithmetic operations will you like to perform ?: ");
+        var calcOperation = window.prompt("Enter your first number:")
+        var calcOperator = window.prompt("Enter your second number:")
+        if (userWish == "+") {
+            result = Number(calcOperation) + Number(calcOperator)
+        } else if (userWish == "-") {
+            result = Number(calcOperation) - Number(calcOperator)
+        } else if (userWish == "*") {
+            result = Number(calcOperation) * Number(calcOperator)
+        } else if (userWish == "/") {
+            result = Number(calcOperation) / Number(calcOperator)
+        } else if (userWish == "^") {
+            result = Number(calcOperation) ** Number(calcOperator)
+        } else if (userWish == "%") {
+            result = Number(calcOperation) % Number(calcOperator)
+        } else {
+            result = "Invalid Syntax"
+        }
+        alert("The result of the operation:\n" + calcOperation + userWish + calcOperator + " = " + result)
+        alert("Bye!")
+    </script>
+</body>
+
+</html>
